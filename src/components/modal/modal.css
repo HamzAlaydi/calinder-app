@@ -1,0 +1,11 @@
+.modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.modal-btn button {
+    margin-left: 10px;
+}
