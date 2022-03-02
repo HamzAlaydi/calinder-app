@@ -1,4 +1,4 @@
-import React, { useState, useContext, useCallback } from "react";
+import React, { useContext, useCallback } from "react";
 import { Modal, Button, Input } from "antd";
 import { useForm, Controller } from "react-hook-form";
 //context
@@ -6,10 +6,9 @@ import { ShowModal } from "../../utils/context/showModal";
 //styles
 import "./modal.css";
 const ModalC = () => {
-  //state
   //context
   const [showModal, setShowModal] = useContext(ShowModal);
-  const [modalData, setModalData] = useContext(ShowModal);
+  const [modalData] = useContext(ShowModal);
 
   //functions
 

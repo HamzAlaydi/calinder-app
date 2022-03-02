@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import { Button, Calendar } from "antd";
 
 //context
@@ -9,12 +9,12 @@ import "./calendar.css";
 
 const CalendarC = () => {
   //contexts
-  const [showModal, setShowModal] = useContext(ShowModal);
-  const [modalData, setModalData] = useContext(ShowModal);
+  const [, setShowModal] = useContext(ShowModal);
+  const [, setModalData] = useContext(ShowModal);
 
   //functions
 
-  //11
+  //on change from useMemo to useCallBack the button will not be presinted :(
   const dataCell = useMemo(
     () => (value) => {
       const handleClick = () => {
