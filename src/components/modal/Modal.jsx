@@ -44,6 +44,7 @@ const ModalC = () => {
     }
   });
 
+  console.log("test");
   const handleDelete = useCallback(() => {
     localStorage.removeItem(`${modalData.date}`);
   }, []);
